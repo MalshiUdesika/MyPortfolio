@@ -132,12 +132,16 @@ header .container{
     font-weight: 700;
     color: var(--dark-color);
 }
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
 
 nav ul{
     display: flex;
     list-style: none;
 }
-
 nav ul li {
     margin-left:30px ;
 }
