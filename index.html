@@ -1,0 +1,161 @@
+<DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
+        <title>Malshi Gamage | Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">   
+    </head>
+    
+    <body>
+        <header>
+            <div class="logo">Malshi Gamage</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home </a></li>
+                    <li><a href="#about">About </a></li>
+                    <li><a href="#skills">Skills </a></li>
+                    <li><a href="#projects">Projects </a></li>
+                    <li><a href="#contact">Contact </a></li>
+                </ul>
+            </nav>
+
+            <div class="header-right">
+                <button id="dark-mode-toggle" class="dark-mode-toggle">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </header>
+
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Hi, I'm <span>Malshi Gamage</span></h1>
+                    <h2>Aspiring Software Developer</h2>
+                    <p>Developping web sites, full stack develeper</p>
+                    <a href="#contact" class="btn">Get In Touch</a>
+                </div>
+                <div class="hero-image">
+                    <img src="MyPic2.jpg" alt="Malshi">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Hi, I’m Malshi Gamage, an ICT undergraduate from Sri Lanka specializing in Software Systems Technology. I’m passionate about software development, sustainability-focused tech, and building my career as a developer and entrepreneur.</p>
+                        <p> I’m Malshi Gamage, an undergraduate student pursuing a Bachelor’s degree in Information and Communication Technology (BICT) at a Sri Lankan university, with a focus on Software Systems Technology. I’ve gained hands-on experience through academic projects, including web and mobile applications that promote sustainability.</p>
+                        <div class="about-btns">
+                            <a href="#" class="btn">Download CV</a>
+                            <a href="#contact" class="btn btn-outline">Hire Me</a>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3>2+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>2+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <sectin id="Skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">My Skills</h2>
+                <div class="skills-container">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Java Script</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+            </div>
+        </sectin>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">My Projects</h2>
+                <div class="project-filter">
+                    <button class="filter-btn" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="app">App</button>
+                    <button class="filter-btn" data-filter="design">Design</button>
+
+                </div>
+                <div class="projects-grid">
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="content-info">
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>malshigamage15@gmail.com</p>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <p>076-4248949</p>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Walasmulla, Hambantota, Sri Lanka</p>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/malshi-gamage-15492932a/"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/Malshi2300"><i class="fab fa-github"></i></a>
+                            <a href="https://www.facebook.com/share/1GvsMbtSY2/?mibextid=wwXIfr"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+            
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <ddiv class="form-group">
+                            <input type="email" placeholder="your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p>&copy; <span id="year"></span>Malshi Gamage. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
