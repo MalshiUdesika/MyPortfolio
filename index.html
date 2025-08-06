@@ -19,15 +19,17 @@
                     <li><a href="#projects">Projects </a></li>
                     <li><a href="#Service">Service</a></li>
                     <li><a href="#contact">Contact </a></li>
+                    <li>
+                        <button id="darkModeToggle" class="dark-mode-btn">🌙</button>
+                    </li>
+
                 </ul>
+
+                
+  
+
             </nav>
 
-            <div class="header-right">
-                <button id="dark-mode-toggle" class="dark-mode-toggle">
-                    <i class="fas fa-moon"></i>
-                    <i class="fas fa-sun"></i>
-                </button>
-            </div>
             <div class="mobile-menu">
                 <i class="fas fa-bars"></i>
             </div>
@@ -42,7 +44,7 @@
                     <a href="#contact" class="btn">Get In Touch</a>
                 </div>
                 <div class="hero-image">
-                    <img src="MyPic2.jpg" alt="Malshi">
+                    <img src="images\MyPic2.jpg" alt="Malshi">
                 </div>
             </div>
         </section>
@@ -80,7 +82,7 @@
                     <ul>
                         <li>HTML</li>
                         <li>CSS</li>
-                        <li>Java Script</li>
+                        <li>JavaScript</li>
                         <li>Java</li>
                         <li>Python</li>
                     </ul>
@@ -135,7 +137,7 @@
                         <div class="form-group">
                             <input type="text" placeholder="Your Name" required>
                         </div>
-                        <ddiv class="form-group">
+                        <div class="form-group">
                             <input type="email" placeholder="your Email" required>
                         </div>
                         <div class="form-group">
@@ -158,5 +160,26 @@
         </footer>
 
         <script src="script.js"></script>
+
+
+<script>
+  const toggleBtn = document.getElementById("darkModeToggle");
+  const body = document.body;
+
+  toggleBtn.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+
+    // Change icon when toggled
+    if (body.classList.contains("dark-mode")) {
+      toggleBtn.textContent = "☀️"; // Light mode icon
+    } else {
+      toggleBtn.textContent = "🌙"; // Dark mode icon
+    }
+  });
+</script>
+
+
+
+
     </body>
 </html>
